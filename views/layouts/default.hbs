@@ -3,23 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <title>Team Cloud In The Sky's Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 </head>
 <body>
-  <div>
-      <h1>Welcome to Cloud In the Sky's application</h1>
-    {{{body}}}
-</div>
-<div>
-  <h2>Add an event</h2>
+<div class="container">
+  <div class="row">
+    <h1>Welcome to Cloud In the Sky's application</h1>
+  </div>
+    <div class="row">    
+    <div class= "col-sm-4"> 
+    <h2>Add an event</h2>
     <form action="/event" method="post">
        title: <input name="title" type="text" /> <br />
        description: <input name="description" type="text" /> <br />
        <br />
-        <input type="submit" name="submit" value="submit" />
+        <input type="submit" name="submit" value="submit" /> </br></br>
     </form>
+    </div>    
+    
+    <div class= "col-sm-8">
+    {{{body}}}
+    </div>
   </div>
+    <div class="row">
+        <p>Footer</p>
+  </div>
+</div>
+ 
 </body>
 </html>
